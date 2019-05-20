@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/order/order",
+    "pages/quick/quick",
+    "pages/professor/professor",
+    "pages/personal/personal",
+    "pages/question/question",
+    "pages/health/health",
+    "pages/chat/chat",
+    "pages/hos_detail/hos_detail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "安心",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

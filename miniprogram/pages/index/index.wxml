@@ -1,0 +1,62 @@
+<view class='container'>
+<import src="/pages/public.wxml"/>
+ <view class="matrix">
+    <navigator url="/pages/professor/professor" open-type="navigate" class="nav-btn active" hover-class="nav-hover">
+      <view class="matrix-btn yygh">
+        <icon class="yygh"/>
+        <view class="title">快速问诊</view>
+        <view class="info">足不出户 咨询专家</view>
+      </view>
+    </navigator>
+<navigator url="/pages/order/order" open-type="navigate" class="nav-btn active" hover-class="nav-hover">
+      <view class="matrix-btn yygh">
+        <icon class="yygh"/>
+        <view class="title">预约挂号</view>
+        <view class="info">无需排队 免费挂号</view>
+      </view>
+    </navigator>
+    <!-- <navigator url='/pages/question/question' open-type="navigate" class="nav-btn active" hover-class="nav-hover">
+      <view class="matrix-btn gtpp">
+        <icon class="gtpp"/>
+        <view class="title">快速提问</view>
+        <view class="info">足不出户 咨询专家</view>
+      </view>
+    </navigator> -->
+    <button open-type="contact" class="nav-btn active" hover-class="nav-hover">
+      <view class="matrix-btn kswz">
+        <icon class="kswz"/>
+        <view class="title">智能诊病</view>
+        <view class="info">足不出户 自查疾病</view>
+      </view>
+    </button>
+    <navigator url='/pages/health/health' open-type="navigate" class="nav-btn active" hover-class="nav-hover">
+      <view class="matrix-btn user">
+        <icon class="user"/>
+        <view class="title">健康资讯</view>
+        <view class="info">寻找健康 寻找美丽</view>
+      </view>
+    </navigator>
+     </view>
+<view>
+<view class='wrapper' wx:for='{{hospitalList}}' wx:key='{{index}}'>
+<navigator url='/pages/hos_detail/hos_detail?title={{item.title}}' hover-class='none'>
+<view class='hospital'>
+<image class='hospital-image' src='{{item.img}}'>
+</image>
+<view class='hos-info'>
+<view class='hos-title'>{{item.title}}</view>
+<view class='another'>别名：{{item.another_name}}</view>
+<view class='address'>地址：{{item.address1}}</view>
+<view class='tel'>电话：{{item.tel}}</view>
+<view class='pre'>{{item.right_mun}}</view>
+</view>
+</view>
+
+</navigator>
+</view> 
+
+<template is="foot" />
+</view>
+</view>
+
+

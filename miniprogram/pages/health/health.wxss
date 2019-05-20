@@ -1,0 +1,36 @@
+.health{
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.health_image{
+  width: 284rpx;
+  height: 212rpx;
+  margin-right: 20rpx;
+}
+.health_info{
+  flex: 1;
+	font-size: 28rpx;
+  line-height: 1.8;
+}
+.title{
+  font-size: 28rpx;
+  /* text-align: center; */
+  font-weight: bolder;    
+  color:#323232; 
+}
+.detail{
+  color:#999;
+  font-size: 24rpx;
+}
+.t_wrapper{
+  height: 40rpx;
+  position: relative;
+}
+.type{
+position: absolute;
+bottom: 0rpx;
+right:24rpx;
+color: #2ec561;
+
+}

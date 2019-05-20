@@ -1,0 +1,32 @@
+<i-tabs current="{{current_scroll}}" scroll bindchange="handleChangeScroll">
+    <i-tab key="内科" title="内科"></i-tab>
+    <i-tab key="外科" title="外科"></i-tab>
+    <i-tab key="妇产科" title="妇产科"></i-tab>
+    <i-tab key="儿科" title="儿科"></i-tab>
+    <i-tab key="皮肤科" title="皮肤科"></i-tab>
+    <i-tab key="耳鼻咽喉科" title="耳鼻咽喉科"></i-tab>
+    <i-tab key="眼科" title="眼科"></i-tab>
+    <i-tab key="口腔科" title="口腔科"></i-tab>
+    <i-tab key="肿瘤科" title="肿瘤科"></i-tab>
+</i-tabs>
+
+<view class="online" wx:for="{{docList}}" wx:key="{{index}}">
+<image src='{{item.img}}' class='image'></image>
+<view class="online-info">
+<view class="doc_name">{{item.doc_name}}</view>
+<view class="dep">{{item.dep}}</view>
+<view class="hos">{{item.hos}}</view>
+<view class="center">
+    <text class="grade">评分 {{item.grade}}</text>
+<text class='num'>问诊量 {{item.num}}</text>
+</view>
+
+<view class='good'>{{item.good}}</view>
+<view class="ask">
+<view><i-icon type="picture" size='24' color='#377bee'  bindtap='picture'/>图文问诊</view>
+<view><i-icon type="video" size='24' color='#377bee'bindtap='video' />视听问诊</view>
+</view>
+</view>
+</view>
+<!-- <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1710624138,2400669876&fm=26&gp=0.jpg'></image> -->
+

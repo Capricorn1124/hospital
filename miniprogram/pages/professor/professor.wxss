@@ -1,0 +1,46 @@
+.online{
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.online-info{
+  
+  flex: 1;
+	font-size: 28rpx;
+	line-height: 1.8;
+}
+.dep,.hos{
+  text-align: center;
+  font-size: 26rpx;
+}
+.image{
+  justify-content: center;
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 50px;
+  margin-right: 50rpx;
+}
+.doc_name{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight:bold;
+  text-align: center;
+}
+.grade,.num{
+  margin:0 40rpx;
+  text-align: center;
+  color:#f9a821;
+}
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+
+}
+
+.ask{
+ overflow: hidden;
+}
+.ask view{
+  float: left;
+  margin: 0 15rpx;
+}

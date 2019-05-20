@@ -1,0 +1,48 @@
+<view class='order' >
+<import src="/pages/public.wxml"/>
+<image src='{{image}}' class='t_image'></image>
+<view>
+  <form>
+      <view class="form-text">
+      <label>您的姓名：</label>
+      <input type="text" placeholder="仅用于预约使用" name="patients" maxlength="32" placeholder-class="input-placeholder" class="from-input" />
+    </view>
+    <view class="form-text">
+      <label>您的电话：</label>
+      <input type="text" placeholder="仅用于预约使用" name="tel" maxlength="32" placeholder-class="input-placeholder" class="from-input" />
+    </view>
+    <view class="form-text">
+      <label>预约日期：</label>
+      <picker mode="date" value="{{today}}" start="{{today}}" name="yydate"  bindchange="bindDateChange" class="from-input" >
+        <view class="dateoption">
+          {{today}}
+        </view>
+      </picker>
+    </view>
+  <view class='form-text'>
+   <label>预约医院:</label>
+ <picker bindchange="bindhosChange" value="{{hos[index]}}" range="{{hos}}" class='form-input'>
+    <view class='dateoption'> {{hos[index]}}</view>
+        </picker></view>
+ <view class='form-text'>
+   <label>预约科室</label>
+    <picker  bindchange="binddepChange" value="{{choose[d_index]}}" range="{{choose}}"class='form-input'>
+    <view  class='dateoption'>
+         {{choose[d_index]}}</view>
+        </picker>
+ </view>
+ <view class='form-text'>
+   <label>预约医生:</label>
+ <picker bindchange="binddocChange" value="{{doc[h_index]}}" range="{{doc}}" class='form-input'>
+    <view class='dateoption'>{{doc[h_index]}}</view>
+        </picker></view>
+  </form>
+  </view>
+  <view class="form-textarea">
+ <textarea maxlength="200" name="content" placeholder-class="input-placeholder" placeholder="（非必填）可简单描述您的症状或者病情"></textarea>
+  </view>
+  <view class="form-submit">
+      <button size="default" loading="{{loading}}" class="online-submit" form-type="submit">加密提交</button>
+  </view>
+<template is="foot" />
+  </view>

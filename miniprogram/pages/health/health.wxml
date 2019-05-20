@@ -1,0 +1,14 @@
+<navigator>
+<view class="health" wx:for="{{articleList}}" wx:key="{{index}}">
+<image class='health_image' src='{{item.img}}'></image>
+<view class='health_info'>
+<view class="title">{{item.title}}</view>
+<view class='content'>  {{item.detail}}</view>
+<view class="t_wrapper">
+    <view class="type">{{item.channel}}</view>
+</view>
+</view>
+</view>
+</navigator>
+
+
