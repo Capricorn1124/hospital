@@ -28,7 +28,7 @@ Page({
     }
     //调通接口
     websocket.connect(this.data.userInfo, function (res) {
-      console.error('>>>123')
+      console.error('>>>123>>>')
       // console.log(JSON.parse(res.data))
       var list = []
       list = that.data.newslist
@@ -146,9 +146,9 @@ Page({
     query.selectViewport().scrollOffset()
     query.exec(function (res) {
       wx.pageScrollTo({
-        scrollTop: res[0].bottom  // #the-id节点的下边界坐标  
+        scrollTop: res[0].bottom  // #the-id节点的下边界坐标
       })
-      res[1].scrollTop // 显示区域的竖直滚动位置  
+      res[1].scrollTop // 显示区域的竖直滚动位置
     })
   },
 })
