@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 7,
+			"current": 9,
 			"list": [
 				{
 					"id": -1,
@@ -94,6 +94,21 @@
 					"id": -1,
 					"name": "docreg",
 					"pathName": "pages/docreg/docreg",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "order",
+					"pathName": "pages/patreg/patreg",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "order",
+					"pathName": "pages/mine_appointment/mine_appointment",
+					"query": "",
 					"scene": null
 				}
 			]

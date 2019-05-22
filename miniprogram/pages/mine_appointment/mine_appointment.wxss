@@ -1,0 +1,118 @@
+.box{
+    padding: 50rpx;
+}
+.box-cell{
+    border: 1px solid #DEDEDE;
+}
+.product-cell{
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 30rpx;
+    padding: 30rpx 30rpx 30rpx 30rpx;
+    border-radius: 3px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.10);
+}
+.title{
+    font-size: 28rpx;
+    color: #333333;
+    flex: 1;
+    line-height:44rpx;
+}
+.status{
+    font-weight: 500;
+    margin-right: 30rpx;
+    line-height:44rpx;
+    text-align: right;
+    font-size: 24rpx;
+    color: #6456D6;
+}
+.arrow{
+    font-size: 24rpx;
+}
+.color-green{
+    color: #47B36B;
+}
+.color-lock{
+    color: #CCCCCC;
+}
+
+.cell-full{
+    display: flex;
+    width: 100%;
+    line-height: 1.4;
+    box-sizing: border-box;
+    position: relative;
+    -ms-flex-pack: distribute;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.cell-part{
+    flex: 1;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    font-size: 36rpx;
+}
+.cell-info{
+    padding: 30rpx;
+}
+.cell-name {
+    margin-top: 30 rpx;
+    font-weight: 500;
+    margin-bottom: 20rpx;
+}
+.amount-text,.due-date-text{
+    font-size: 28rpx;
+}
+.amount-text-lock,.due-date-text-lock{
+    font-size: 28rpx;
+}
+.amount-text{
+    flex: 2;
+}
+.name{
+    width: 200rpx;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.cell-number {
+    line-height: 60 rpx;
+    margin-top: 6 rpx;
+}
+.amount,.due-date{
+    font-size: 28rpx;
+    color: #333333;
+    font-family: 'din';
+}
+.amount-lock, .due-date-lock{
+    font-size: 28rpx;
+    color: #CCCCCC;
+    font-family: 'din';
+}
+.due-date{
+    color:#FF922D;
+}
+.marketing {
+    position: absolute;
+    right: 30 rpx;
+    bottom: 30 rpx;
+    width: 80 rpx;
+    height: 80 rpx;
+}
+.cell-title {
+    display: flex;
+    padding: 30rpx;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+}
+.title-img{
+    width: 44rpx;
+    height: 44rpx;
+    margin-right:20rpx;
+}
