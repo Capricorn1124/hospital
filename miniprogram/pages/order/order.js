@@ -18,7 +18,7 @@ Page({
     image:'http://img2.imgtn.bdimg.com/it/u=1903402715,1102906635&fm=26&gp=0.jpg',
     doctemp:[]
   },
-getdep:function(){
+ getdep:function(){
 wx.cloud.callFunction({
   name:'getdep'
 }).then(res=>{

@@ -25,8 +25,8 @@
 
 <view class='good'>{{item.good}}</view>
 <view class="ask">
-<view><i-icon type="picture" size='24' color='#377bee'  bindtap='picture'/>图文问诊{{item.img_pri}}</view>
-<view><i-icon type="video" size='24' color='#377bee' bindtap='video' />视听问诊{{vedio}}</view>
+<navigator url='/pages/chat/chat' ><view><i-icon type="picture" size='24' color='#377bee'  bindtap='picture'/>图文问诊{{item.img_pri}}</view></navigator>
+<view><i-icon type="video" size='24' color='#377bee' bindtap='video' />视听问诊{{item.vedio}}</view>
 </view>
 </view>
 </view>

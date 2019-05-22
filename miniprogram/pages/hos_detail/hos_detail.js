@@ -37,7 +37,14 @@ Page({
         another:res.data[0].another_name,
         detail:res.data[0].introduce,
         web:res.data[0].hos_address,
-        img:res.data[0].img
+        img:res.data[0].img,
+        longitude: res.data[0].longitude,
+        latitude: res.data[0].latitude,
+        markers: [{
+          id: res.data[0]._id ,
+          latitude: res.data[0].latitude,
+          longitude: res.data[0].longitude,
+        }]
       })
     })
   },

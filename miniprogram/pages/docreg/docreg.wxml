@@ -1,0 +1,19 @@
+ <form bindsubmit="formSubmit" bindreset="formReset">
+ 姓名:<input name="name" placeholder='请点此输入..'></input>
+ 电话:<input name="tel" placeholder='请点此输入..'></input>
+ 性别:<input name="sex" placeholder='请点此输入..'></input>
+ 年龄:<input name="age" placeholder='请点此输入..'></input>
+ 医院:<picker bindchange="bindhosChange" value="{{hos[index]}}" range="{{hos}}" class='form-input' name="hos">
+    <view class='dateoption'> {{hos[index]}}</view>
+        </picker>
+ 科室: <picker  bindchange="binddepChange" value="{{choose[d_index]}}" range="{{choose}}"class='form-input' name="dep">
+    <view  class='dateoption'>
+         {{choose[d_index]}}</view>
+        </picker>
+ 学历:<picker bindchange="bindPickerChange" value="本科" range="{{education}}" name="edu">
+     <view class="picker">{{education[e_index]}}</view>
+     </picker>
+ <!-- 病史:<input name="patient" placeholder='请点此输入..'></input>
+ 药物过敏:<input name="drug" placeholder='请点此输入..'></input> -->
+ <button form-type='submit' bindtap='toast'>submit</button>
+</form>
