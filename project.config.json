@@ -9,7 +9,16 @@
 		"postcss": false,
 		"minified": false,
 		"newFeature": true,
-		"autoAudits": false
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.2.5",
@@ -38,7 +47,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 11,
+			"current": 14,
 			"list": [
 				{
 					"id": -1,
@@ -97,16 +106,16 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "order",
+					"id": 8,
+					"name": "patreg",
 					"pathName": "pages/patreg/patreg",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 9,
 					"name": "order",
-					"pathName": "pages/mine_appointment/mine_appointment",
+					"pathName": "pages/order/order",
 					"query": "",
 					"scene": null
 				},
@@ -121,6 +130,27 @@
 					"id": -1,
 					"name": "pa",
 					"pathName": "pages/patreg/patreg",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "myappointment",
+					"pathName": "pages/mine_appointment/mine_appointment",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "personal",
+					"pathName": "pages/personal/personal",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "recieve",
+					"pathName": "pages/receive_appointment/receive_appointment",
 					"query": "",
 					"scene": null
 				}

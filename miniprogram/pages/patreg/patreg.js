@@ -34,6 +34,7 @@ Page({
         age: e.detail.value.age,
         pat: e.detail.value.pat,
         drug: e.detail.value.drug,
+        openid: this.data.openID,
         _id: this.data.openID,
         flag: getApp().pat
       }

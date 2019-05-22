@@ -1,18 +1,45 @@
 // miniprogram/pages/mine_appointment/mine_appointment.js
+const db =wx.cloud.database();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+      paList:[],
+      openID:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
+  getorder:function(){
+    wx.cloud.callFunction({
+      name:"getorder"
+    }).then(res=>{
+      db.collection('order').where({
+        _openid:this.data.openID
+      }).get().then(res=>{
+        this.setData({
+          paList:this.data.paList.concat(res.data)
+        })
+        console.log(this.data.paList)
+      })
+    })
+  },
   onLoad: function (options) {
-
+    
+    wx.cloud.callFunction({
+      name:'login'
+    }).then(res=>{
+      this.setData({
+        openID:res.result.openid
+      })
+  
+    }).catch(err=>{
+      console.log(err)
+    })
+    this.getorder();
   },
 
   /**

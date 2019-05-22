@@ -88,6 +88,7 @@ Page({
         hos:e.detail.value.hos,
         dep:e.detail.value.dep,
         edu:e.detail.value.edu,
+        openid:this.data.openID,
         _id:this.data.openID,
         flag:getApp().doc
       }

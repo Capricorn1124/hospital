@@ -16,7 +16,39 @@ Page({
     d_index:0,
     h_index:0,
     image:'http://img2.imgtn.bdimg.com/it/u=1903402715,1102906635&fm=26&gp=0.jpg',
-    doctemp:[]
+    doctemp:[],
+    
+  },
+  toast:function(){
+    wx.showToast({
+      title: '预约成功',
+      icon: 'success',
+      duration: 2000
+    })
+    setTimeout(function(){
+      wx.navigateTo({
+        url: '/pages/order/order',
+      })
+    },2500)
+  },
+  formSubmit: function (e) {
+    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+    db.collection('order').add({
+      data: {
+       name: e.detail.value.patients,
+        tel:e.detail.value.tel,
+        date:e.detail.value.yydate,
+        hos:e.detail.value.hos,
+        dep:e.detail.value.dep,
+        doc:e.detail.value.doc,
+        content:e.detail.value.content,
+        openid:this.data.openID,
+      
+      }
+    }).then(res => {
+        console.log("添加成功")
+      });
+  
   },
  getdep:function(){
 wx.cloud.callFunction({

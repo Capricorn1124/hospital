@@ -1,5 +1,6 @@
 
 <i-cell-group>
-    <i-cell title="我的评论" is-link url="/pages/dashboard/index"></i-cell>
-    <i-cell title="我的预约" is-link url="/pages/dashboard/index"></i-cell>
+    <i-cell title="我的评论" is-link url=""></i-cell>
+    <i-cell title="我的预约" is-link url="/pages/mine_appointment/mine_appointment"></i-cell>
+     <i-cell title="我收到的预约" is-link url="/pages/receive_appointment/receive_appointment"></i-cell>
 </i-cell-group>
