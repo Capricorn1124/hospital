@@ -1,0 +1,33 @@
+<view class="box">
+    <view class="box-cell">
+        <view class="cell-title">
+            <view class="title">孟美琪</view>
+            <view class="status">预约成功<text class="iconfont icon-next arrow"></text></view>
+        </view>
+        <view class="cell-info">
+            <view class="cell-name cell-full">
+                <view class="due-date-text cell-part">联系方式</view>
+                <view class="amount-text cell-part">
+                    <view class="name">18846420558</view>
+                </view>
+            </view>
+            <view class="cell-name cell-full">
+                <view class="due-date-text cell-part">病情描述</view>
+                <view class="amount-text cell-part">
+                    头疼发烧呕吐
+                </view>
+            </view>
+            <view class="cell-name cell-full">
+                <view class="due-date-text cell-part">过敏药物</view>
+                <view class="amount-text cell-part">
+                    头孢 青霉素
+                </view>
+            </view>
+            <view class="cell-number cell-full">
+                <view class="amount cell-part">2019-5-22</view>
+                <view class="amount cell-part">下午5.30</view>
+                <view class="due-date cell-part">14号</view>
+            </view>
+        </view>
+    </view>
+</view>

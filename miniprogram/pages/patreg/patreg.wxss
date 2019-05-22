@@ -1,1 +1,22 @@
-/* pages/patreg/patreg.wxss */
+
+.box{
+    padding: 40rpx 20rpx 20rpx 20rpx;
+}
+.detail{
+    display: flex;
+    margin-bottom: 30rpx;
+}
+.key{
+    line-height: 50rpx;
+    flex-grow: 1;
+    font-size: 36rpx;
+}
+.value{
+    line-height: 50rpx;
+    flex-grow: 10;
+    font-size: 36rpx;
+    border: 2rpx solid #eee;
+}
+.dateoption{
+    color: #aaa;
+}
