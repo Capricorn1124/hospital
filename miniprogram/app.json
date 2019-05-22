@@ -8,7 +8,12 @@
     "pages/question/question",
     "pages/health/health",
     "pages/chat/chat",
-    "pages/hos_detail/hos_detail"
+    "pages/hos_detail/hos_detail",
+    "pages/health_detail/health_detail",
+    "pages/first/first",
+    "pages/iden/iden",
+    "pages/docreg/docreg",
+    "pages/patreg/patreg"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

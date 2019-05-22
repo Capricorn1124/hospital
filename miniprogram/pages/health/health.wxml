@@ -1,5 +1,18 @@
-<navigator>
-<view class="health" wx:for="{{articleList}}" wx:key="{{index}}">
+<i-tabs current="{{current_scroll}}" scroll bindchange="handleChangeScroll">
+ <i-tab key="热点" title="热点"></i-tab>
+    <i-tab key="女性" title="女性"></i-tab>
+    <i-tab key="美容" title="美容"></i-tab>
+    <i-tab key="育儿" title="育儿"></i-tab>
+    <i-tab key="生活" title="生活"></i-tab>
+    <i-tab key="营养" title="营养"></i-tab>
+    <i-tab key="减肥" title="减肥"></i-tab>
+    <i-tab key="情感" title="情感"></i-tab>
+    <i-tab key="两性" title="两性"></i-tab>
+    <i-tab key="糖尿病" title="糖尿病"></i-tab>
+</i-tabs>
+<view class="wrapper" wx:for="{{articleList}}" wx:key="{{index}}">
+<navigator url="/pages/health_detail/health_detail?id={{item._id}}">
+<view class='health'>
 <image class='health_image' src='{{item.img}}'></image>
 <view class='health_info'>
 <view class="title">{{item.title}}</view>
@@ -10,5 +23,8 @@
 </view>
 </view>
 </navigator>
+
+</view>
+
 
 

@@ -1,0 +1,7 @@
+
+<view class="health_detail">
+  <view class='title'>{{title}}</view>
+  <view class="detail">{{detail}}</view>
+  <image class="image"src='{{img}}'></image>
+  <view class='article' ><text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>{{article}}</view>
+  </view>

@@ -1,0 +1,6 @@
+<view class='wrapper'>
+<button class="button" bindtap="getdoc">我是医生</button>
+<button class="button" bindtap="getpat">我是患者</button>
+
+</view>
+  

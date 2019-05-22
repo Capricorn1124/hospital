@@ -5,7 +5,7 @@
   <view class="foot">
     <navigator url="/pages/index/index" class="foot_btn index" hover-class="none" open-type="reLaunch">首页</navigator>
     <button open-type="contact" class="foot_btn kswz" >快速问诊</button>
-    <navigator url="/pages/personal/personal" class="foot_btn grzx" hover-class="none" open-type="reLaunch">个人中心</navigator>
+    <navigator url="/pages/personal/personal" class="foot_btn grzx" hover-class="none" >个人中心</navigator>
   </view>
 </template>
 <template name="hospitalinfo">

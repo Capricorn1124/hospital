@@ -1,27 +1,52 @@
 // miniprogram/pages/hos_detail/hos_detail.js
+const db=wx.cloud.database();
 Page({
-
+  z: 1,
   /**
    * 页面的初始数据
    */
   data: {
-    latitude:45.6954020000,
-    longitude:126.6206150000
-
+    latitude:'',
+    longitude:'',
+    markers: [{
+      id: '',
+      latitude: '',
+      longitude: '',
+    }],
+    title:'',
+    address:'',
+    web:'',
+    tel:'',
+    detail:'',
+    another:'',
+    img:'',
   },
-gethos:function(){
- wx.cloud.callFunction({
-   name:"getinfo"
- }).then(res=>{
-   console.log(res)
- })
-},
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.gethos();
-    console.log(options.title)
+    db.collection("hospital").where({
+      title: options.title
+    }).get().then(res => {
+      // console.log(res.data.title)
+      this.setData({
+        title:res.data[0].title,
+        address:res.data[0].address1,
+        tel:res.data[0].tel,
+        another:res.data[0].another_name,
+        detail:res.data[0].introduce,
+        web:res.data[0].hos_address,
+        img:res.data[0].img,
+        longitude: res.data[0].longitude,
+        latitude: res.data[0].latitude,
+        markers: [{
+          id: res.data[0]._id ,
+          latitude: res.data[0].latitude,
+          longitude: res.data[0].longitude,
+        }]
+      })
+    })
   },
 
   /**

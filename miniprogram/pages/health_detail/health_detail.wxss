@@ -1,0 +1,21 @@
+.image{
+    width: 500rpx;
+    height: 580rpx;
+    margin: 0 auto;
+}
+.title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36rpx;
+    font-weight: bolder;
+    margin-left: 10rpx;
+}
+.detail{
+    margin: 30rpx 0;
+    margin-left: 40rpx;
+    font-size: 28rpx;
+}
+.article{
+    font-size: 30rpx;
+    letter-spacing:4rpx;
+    text-decoration: blink;
+}

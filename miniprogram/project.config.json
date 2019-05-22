@@ -9,16 +9,31 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
+<<<<<<< HEAD
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.0",
 	"appid": "wxe41a73ba4135321a",
 	"projectname": "miniprogram",
+=======
+		"autoAudits": false,
+		"coverView": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.0",
+	"appid": "wxe301469a055d0a1e",
+	"projectname": "hospitalnew",
+>>>>>>> 5de048b5c04f2a99369f3353b8a1e137c20bb7df
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
+<<<<<<< HEAD
+=======
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+>>>>>>> 5de048b5c04f2a99369f3353b8a1e137c20bb7df
 	"condition": {
 		"search": {
 			"current": -1,

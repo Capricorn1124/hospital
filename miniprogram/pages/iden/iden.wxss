@@ -1,0 +1,15 @@
+.wrapper{
+  width: 420rpx;
+  margin: 0 auto;
+
+
+}
+.button{
+  border: solid 1rpx #7bc2f1;
+  background-color:#7bc2f1; 
+  border-radius: 48rpx;
+  width:400rpx;
+  heigth:200rpx;
+  color: #fff;
+  margin: 200rpx 0;
+}

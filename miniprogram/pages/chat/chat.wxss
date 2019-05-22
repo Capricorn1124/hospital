@@ -198,6 +198,9 @@ page {
 .slideup {
     animation: slideup 0.5s linear ;
 }
+.hidden{
+  display: none;
+}
 @keyframes slideup {
     from {
         transform: translateY(100%);
