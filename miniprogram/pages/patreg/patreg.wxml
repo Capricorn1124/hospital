@@ -1,9 +1,33 @@
+ <view class="box">
  <form bindsubmit="formSubmit" bindreset="formReset">
- 姓名:<input name="name" placeholder='请点此输入..' ></input>
- 电话:<input name="tel" placeholder='请点此输入..'></input>
- 性别:<input name="sex" placeholder='请点此输入..'></input>
- 年龄:<input name="age" placeholder='请点此输入..'></input>
- 病史:<input name="patient" placeholder='请点此输入..'></input>
- 药物过敏:<input name="drug" placeholder='请点此输入..'></input> 
- <button form-type='submit' bindtap='toast'>submit</button>
-</form>
+  <view class="detail">
+   <view class="key">姓名:</view>
+   <input class="value" name="name" placeholder='请点此输入..'></input>
+  </view>
+  <view class="detail">
+   <view class="key">电话:</view>
+   <input class="value" name="tel" placeholder='请点此输入..'></input>
+  </view>
+  <view class="detail">
+   <view class="key">性别:</view>
+   <input class="value" name="sex" placeholder='请点此输入..'></input>
+  </view>
+  <view class="detail">
+   <view class="key">年龄:</view>
+   <input class="value" name="age" placeholder='请点此输入..'></input>
+  </view>
+  <view class="detail">
+   <view class="key">病史:</view>
+   <input class="value"  name="patient" placeholder='请点此输入..'></input>
+  </view>
+  <view class="detail">
+   <view class="key">药物过敏:</view>
+   <input class="value" name="drug" placeholder='请点此输入..'></input>
+  </view>
+  <!-- 病史:<input name="patient" placeholder='请点此输入..'></input>
+  药物过敏:<input name="drug" placeholder='请点此输入..'></input> -->
+  <button form-type='submit' bindtap='toast'>submit</button>
+ </form>
+
+ </view>
+

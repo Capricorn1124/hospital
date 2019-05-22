@@ -1,27 +1,26 @@
 {
-	"miniprogramRoot": "miniprogram/",
-	"cloudfunctionRoot": "cloudfunctions/",
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
 	"setting": {
 		"urlCheck": false,
 		"es6": false,
 		"postcss": false,
 		"minified": false,
 		"newFeature": true,
-		"autoAudits": false,
-		"checkInvalidKey": true,
-		"checkSiteMap": true,
-		"uploadWithSourceMap": true,
-		"babelSetting": {
-			"ignore": [],
-			"disablePlugins": [],
-			"outputPath": ""
-		}
+		"autoAudits": false
 	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.5",
 	"appid": "wxe41a73ba4135321a",
 	"projectname": "hospital",
-	"libVersion": "2.2.5",
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"scripts": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -39,11 +38,7 @@
 			"list": []
 		},
 		"miniprogram": {
-<<<<<<< HEAD
-			"current": 9,
-=======
-			"current": 5,
->>>>>>> 3b5e2476980823eaf969fcac1dfc12d41550e302
+			"current": 11,
 			"list": [
 				{
 					"id": -1,
@@ -81,9 +76,9 @@
 					"scene": null
 				},
 				{
-					"id": 5,
-					"name": "index",
-					"pathName": "pages/index/index",
+					"id": -1,
+					"name": "first",
+					"pathName": "pages/first/first",
 					"query": "",
 					"scene": null
 				},
@@ -103,7 +98,6 @@
 				},
 				{
 					"id": -1,
-<<<<<<< HEAD
 					"name": "order",
 					"pathName": "pages/patreg/patreg",
 					"query": "",
@@ -114,11 +108,20 @@
 					"name": "order",
 					"pathName": "pages/mine_appointment/mine_appointment",
 					"query": "",
-=======
-					"name": "pareg",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "re",
+					"pathName": "pages/receive_appointment/receive_appointment",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pa",
 					"pathName": "pages/patreg/patreg",
 					"query": "",
->>>>>>> 3b5e2476980823eaf969fcac1dfc12d41550e302
 					"scene": null
 				}
 			]
