@@ -3,9 +3,9 @@
 	"cloudfunctionRoot": "cloudfunctions/",
 	"setting": {
 		"urlCheck": false,
-		"es6": true,
-		"postcss": true,
-		"minified": true,
+		"es6": false,
+		"postcss": false,
+		"minified": false,
 		"newFeature": true,
 		"autoAudits": false,
 		"checkInvalidKey": true,
@@ -17,7 +17,7 @@
 			"outputPath": ""
 		}
 	},
-	"appid": "wxe301469a055d0a1e",
+	"appid": "wxe41a73ba4135321a",
 	"projectname": "hospital",
 	"libVersion": "2.2.5",
 	"simulatorType": "wechat",

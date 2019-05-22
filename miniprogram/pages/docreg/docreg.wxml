@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  <form bindsubmit="formSubmit" bindreset="formReset">
  姓名:<input name="name" placeholder='请点此输入..'></input>
  电话:<input name="tel" placeholder='请点此输入..'></input>
@@ -17,3 +18,53 @@
  药物过敏:<input name="drug" placeholder='请点此输入..'></input> -->
  <button form-type='submit' bindtap='toast'>submit</button>
 </form>
+=======
+<view class="box">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+        <view class="detail">
+            <view class="key">姓名:</view>
+            <input class="value" name="name" placeholder='请点此输入..'></input>
+        </view>
+        <view class="detail">
+            <view class="key">电话:</view>
+            <input class="value" name="tel" placeholder='请点此输入..'></input>
+        </view>
+        <view class="detail">
+            <view class="key">性别:</view>
+            <input class="value" name="sex" placeholder='请点此输入..'></input>
+        </view>
+        <view class="detail">
+            <view class="key">年龄:</view>
+            <input class="value" name="age" placeholder='请点此输入..'></input>
+        </view>
+        <view class="detail">
+            <view class="key">医院:</view>
+            <view class="value">
+                <picker bindchange="bindhosChange" value="{{hos[index]}}" range="{{hos}}" class='form-input' name="hos">
+                    <view class='dateoption'> {{hos[index]}}</view>
+                </picker>
+            </view>
+        </view>
+        <view class="detail">
+            <view class="key">科室:</view>
+            <view class="value">
+                <picker  bindchange="binddepChange" value="{{choose[d_index]}}" range="{{choose}}"class='form-input' name="dep">
+                    <view class='dateoption'>{{choose[d_index]}}</view>
+                </picker>
+            </view>
+        </view>
+        <view class="detail">
+            <view class="key">学历:</view>
+            <view class="value">
+                <picker class="value" bindchange="bindPickerChange" value="本科" range="{{education}}" name="edu">
+                    <view class='dateoption'>{{education[e_index]}}</view>
+                </picker>
+            </view>
+        </view>
+        <!-- 病史:<input name="patient" placeholder='请点此输入..'></input>
+        药物过敏:<input name="drug" placeholder='请点此输入..'></input> -->
+        <button form-type='submit' bindtap='toast'>submit</button>
+    </form>
+
+</view>
+>>>>>>> 4596f337c626b6eddb7b38604d641782f2aab638
