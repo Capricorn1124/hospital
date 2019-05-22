@@ -1,11 +1,13 @@
 // pages/health/health.js
+const db=wx.cloud.database();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    articleList:[]
+    articleList:[],
+    current_scroll:'热点'
   },
 
   /**
@@ -19,6 +21,38 @@ Page({
        articleList:this.data.articleList.concat(res.result.data)
      })
    })
+  },
+  handleChangeScroll: function (e) {
+    this.setData({
+      current_scroll: e.detail.key,
+    })
+    if (e.detail.key != "热点") {
+      wx.cloud.callFunction({
+        name: 'gethealthType',
+        data: {
+          channel: e.detail.key
+        }
+      }).then(res => {
+        this.setData({
+          articleList: res.result.data
+        })
+      })}else{
+      wx.cloud.callFunction({
+        name: "gethealth"
+      }).then(res => {
+        this.setData({
+          articleList:[],
+          articleList: this.data.articleList.concat(res.result.data)
+        })
+      })
+      }
+    
+    // db.collection("artical").where({
+    //   type: e.detail.key
+    // }).get().then(res => {
+    //   console.log(res)
+     
+    // })
   },
   onLoad: function (options) {
     this.getarticle();

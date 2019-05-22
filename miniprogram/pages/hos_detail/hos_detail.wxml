@@ -5,10 +5,22 @@
       style="width: 100%; height: 300px;"
       latitude="{{latitude}}"
       longitude="{{longitude}}"
-      markers=""
+      markers="{{markers}}"
       show-location
     ></map>
   </view>
-    markers="{{markers}}"
-      covers="{{covers}}"
+  <view class="hos_detail">
+  <image class="img" src='{{img}}'></image>
+  <view class="hos_info">
+  <view class="title">{{title}}</view>
+  <view class="address">地址： {{address}}</view>
+  <view class="another">别名： {{another}}</view>
+  <view class="tel">电话： {{tel}}</view>
+  <view class="web">官网： {{web}}</view>
+
+  </view>
+   
+  </view>
+   <view class="detail"> <text class='notice'>注意事项:  </text>{{detail}}</view>
+   
   </view>

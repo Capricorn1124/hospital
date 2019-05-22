@@ -1,1 +1,31 @@
-/* miniprogram/pages/hos_detail/hos_detail.wxss */
+.hos_detail{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    /* margin: 0 auto; */
+  }
+  .img{
+    margin:0 auto;
+    width: 568rpx;
+    height: 424rpx;
+    /* margin-right: 20rpx; */
+  }
+  .hos_info{
+      font-size: 26rpx;
+      line-height: 1.8;
+      margin-left: 70rpx;
+  }
+  .detail{
+      font-size: 28rpx;
+      line-height: 1.9;
+      margin-left: 20rpx;
+  }
+  .title{
+      /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+      font-weight:bolder;
+      font-size: 30rpx;
+      color: rgb(51, 51, 51);
+  }
+  .notice{
+      margin-left: 70rpx;
+      color: rgb(255, 74, 117);
+  }

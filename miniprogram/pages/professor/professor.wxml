@@ -1,3 +1,5 @@
+<!-- 用<live-pusher>和live-player来实现的，但是必须通过类目审核才可以，个人账号无法实现 -->
+
 <i-tabs current="{{current_scroll}}" scroll bindchange="handleChangeScroll">
     <i-tab key="内科" title="内科"></i-tab>
     <i-tab key="外科" title="外科"></i-tab>
@@ -23,8 +25,8 @@
 
 <view class='good'>{{item.good}}</view>
 <view class="ask">
-<view><i-icon type="picture" size='24' color='#377bee'  bindtap='picture'/>图文问诊</view>
-<view><i-icon type="video" size='24' color='#377bee'bindtap='video' />视听问诊</view>
+<view><i-icon type="picture" size='24' color='#377bee'  bindtap='picture'/>图文问诊{{item.img_pri}}</view>
+<view><i-icon type="video" size='24' color='#377bee' bindtap='video' />视听问诊{{vedio}}</view>
 </view>
 </view>
 </view>

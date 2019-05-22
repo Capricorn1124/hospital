@@ -8,7 +8,9 @@
     "pages/question/question",
     "pages/health/health",
     "pages/chat/chat",
-    "pages/hos_detail/hos_detail"
+    "pages/hos_detail/hos_detail",
+    "pages/health_detail/health_detail",
+    "pages/first/first"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
