@@ -1,5 +1,6 @@
 //index.js
 //获取应用实例
+const db =wx.cloud.database();
 const app = getApp()
 
 Page({
@@ -7,13 +8,34 @@ Page({
     motto: '欢迎使用安心医疗',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    openID:''
   },
   onTap: function () {
-    wx.redirectTo({
-      url: '../index/index',
-    })},
-  onLoad: function () {
+    db.collection('user').where({
+      _openid:this.data.openID
+    }).get().then(res=>{
+      if(res.data[0]==undefined){
+        wx.redirectTo({
+          url: '../iden/iden',
+        })
+      }else{
+        wx.redirectTo({
+          url: '../index/index',
+        })
+      }
+    })
+   },
+onLoad: function () {
+  wx.cloud.callFunction({
+    name:'login'
+  }).then(res=>{
+    this.setData({
+      openID:res.result.openid
+    })
+  }).catch(err=>{
+    console.log(err)
+  });
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

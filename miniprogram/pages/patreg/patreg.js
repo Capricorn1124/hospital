@@ -1,11 +1,24 @@
 // pages/patreg/patreg.js
+const db =wx.cloud.database();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    openID:''
+  },
+  toast:function(){
+    wx.showToast({
+      title: '提交成功',
+      icon: 'success',
+      duration: 2000
+    })
+    setTimeout(function(){
+      wx.navigateTo({
+        url: '/pages/index/index',
+      })
+    },2500)
   },
 
   /**
@@ -13,7 +26,7 @@ Page({
    */
   formSubmit: function (e) {
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
-    db.collection('patient').add({
+    db.collection('user').add({
       data: {
         name: e.detail.value.name,
         tel: e.detail.value.tel,
@@ -30,7 +43,15 @@ Page({
 
   },
   onLoad: function (options) {
-
+    wx.cloud.callFunction({
+      name:'login'
+    }).then(res=>{
+      this.setData({
+        openID:res.result.openid
+      })
+    }).catch(err=>{
+      console.log(err)
+    })
   },
 
   /**

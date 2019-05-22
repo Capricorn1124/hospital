@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/first/first",
     "pages/index/index",
     "pages/order/order",
     "pages/quick/quick",
@@ -10,7 +11,6 @@
     "pages/chat/chat",
     "pages/hos_detail/hos_detail",
     "pages/health_detail/health_detail",
-    "pages/first/first",
     "pages/iden/iden",
     "pages/docreg/docreg",
     "pages/patreg/patreg",

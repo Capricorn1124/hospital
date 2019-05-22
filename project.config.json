@@ -39,7 +39,11 @@
 			"list": []
 		},
 		"miniprogram": {
+<<<<<<< HEAD
 			"current": 9,
+=======
+			"current": 5,
+>>>>>>> 3b5e2476980823eaf969fcac1dfc12d41550e302
 			"list": [
 				{
 					"id": -1,
@@ -77,9 +81,9 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "first",
-					"pathName": "pages/first/first",
+					"id": 5,
+					"name": "index",
+					"pathName": "pages/index/index",
 					"query": "",
 					"scene": null
 				},
@@ -99,6 +103,7 @@
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
 					"name": "order",
 					"pathName": "pages/patreg/patreg",
 					"query": "",
@@ -109,6 +114,11 @@
 					"name": "order",
 					"pathName": "pages/mine_appointment/mine_appointment",
 					"query": "",
+=======
+					"name": "pareg",
+					"pathName": "pages/patreg/patreg",
+					"query": "",
+>>>>>>> 3b5e2476980823eaf969fcac1dfc12d41550e302
 					"scene": null
 				}
 			]

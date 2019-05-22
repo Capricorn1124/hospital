@@ -79,7 +79,7 @@ Page({
 
   formSubmit: function (e) {
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
-    db.collection('doc').add({
+    db.collection('user').add({
       data: {
        name: e.detail.value.name,
         tel:e.detail.value.tel,
@@ -101,7 +101,7 @@ Page({
    */
   bindPickerChange:function (e) {
     this.setData({
-      _index:e.detail.value,
+      e_index:e.detail.value,
     })
     },
   onLoad: function (options) {
@@ -114,7 +114,6 @@ Page({
     }).catch(err=>{
       console.log(err)
     })
-    console.error('>>>', getApp().a);
     this.getdep();
     
   },
