@@ -114,7 +114,6 @@ Page({
     }).catch(err=>{
       console.log(err)
     })
-    console.error('>>>', getApp().a);
     this.getdep();
     
   },

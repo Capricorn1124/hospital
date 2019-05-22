@@ -1,11 +1,12 @@
 // pages/patreg/patreg.js
+const db =wx.cloud.database();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    openID:''
   },
 
   /**
@@ -30,7 +31,15 @@ Page({
 
   },
   onLoad: function (options) {
-
+    wx.cloud.callFunction({
+      name:'login'
+    }).then(res=>{
+      this.setData({
+        openID:res.result.openid
+      })
+    }).catch(err=>{
+      console.log(err)
+    })
   },
 
   /**
