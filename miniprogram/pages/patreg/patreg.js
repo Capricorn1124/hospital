@@ -8,13 +8,25 @@ Page({
   data: {
     openID:''
   },
+  toast:function(){
+    wx.showToast({
+      title: '提交成功',
+      icon: 'success',
+      duration: 2000
+    })
+    setTimeout(function(){
+      wx.navigateTo({
+        url: '/pages/index/index',
+      })
+    },2500)
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   formSubmit: function (e) {
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
-    db.collection('patient').add({
+    db.collection('user').add({
       data: {
         name: e.detail.value.name,
         tel: e.detail.value.tel,

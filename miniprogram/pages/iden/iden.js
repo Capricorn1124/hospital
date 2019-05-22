@@ -11,6 +11,16 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  getdoc:function(){
+    wx.navigateTo({
+      url: '../docreg/docreg'
+    })
+  },
+  getpat:function(){
+    wx.navigateTo({
+      url: '../patreg/patreg'
+    })
+  },
   onLoad: function (options) {
 
   },

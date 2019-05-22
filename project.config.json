@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 8,
+			"current": 5,
 			"list": [
 				{
 					"id": -1,
@@ -77,9 +77,9 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "first",
-					"pathName": "pages/first/first",
+					"id": 5,
+					"name": "index",
+					"pathName": "pages/index/index",
 					"query": "",
 					"scene": null
 				},
@@ -101,6 +101,7 @@
 					"id": -1,
 					"name": "pareg",
 					"pathName": "pages/patreg/patreg",
+					"query": "",
 					"scene": null
 				}
 			]
