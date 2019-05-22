@@ -23,6 +23,11 @@ Page({
       icon: 'success',
       duration: 2000
     })
+    setTimeout(function(){
+      wx.navigateTo({
+        url: '/pages/index/index',
+      })
+    },2500)
   },
   bindhosChange:function(e){
     this.setData({
@@ -74,23 +79,22 @@ Page({
 
   formSubmit: function (e) {
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
-    // db.collection('doc').add({
-    //   data: {
-    //    name: e.detail.value.name,
-    //     tel:e.detail.value.tel,
-    //     sex:e.detail.value.sex,
-    //     age:e.detail.value.age,
-    //     hos:e.detail.value.hos,
-    //     dep:e.detail.value.dep,
-    //     edu:e.detail.value.edu,
-    //     _id:this.data.openID
-    //   }
-    // }).then(res => {
-    //     console.log("添加成功")
-    //   });
-    //   db.collection('test').where({
-        
-    //   })
+    db.collection('doc').add({
+      data: {
+       name: e.detail.value.name,
+        tel:e.detail.value.tel,
+        sex:e.detail.value.sex,
+        age:e.detail.value.age,
+        hos:e.detail.value.hos,
+        dep:e.detail.value.dep,
+        edu:e.detail.value.edu,
+        _id:this.data.openID,
+        flag:getApp().doc
+      }
+    }).then(res => {
+        console.log("添加成功")
+      });
+  
   },
   /**
    * 生命周期函数--监听页面加载

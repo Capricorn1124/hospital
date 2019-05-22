@@ -10,7 +10,7 @@
     <view  class='dateoption'>
          {{choose[d_index]}}</view>
         </picker>
- 学历:<picker bindchange="bindPickerChange" value="本科" range="{{education}}" name="edu">
+ 学历:<picker bindchange="bindPickerChange" value="{{education[e_index]}}" range="{{education}}" name="edu">
      <view class="picker">{{education[e_index]}}</view>
      </picker>
  <!-- 病史:<input name="patient" placeholder='请点此输入..'></input>

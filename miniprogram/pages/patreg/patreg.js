@@ -11,6 +11,24 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  formSubmit: function (e) {
+    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+    db.collection('patient').add({
+      data: {
+        name: e.detail.value.name,
+        tel: e.detail.value.tel,
+        sex: e.detail.value.sex,
+        age: e.detail.value.age,
+        pat: e.detail.value.pat,
+        drug: e.detail.value.drug,
+        _id: this.data.openID,
+        flag: getApp().pat
+      }
+    }).then(res => {
+      console.log("添加成功")
+    });
+
+  },
   onLoad: function (options) {
 
   },

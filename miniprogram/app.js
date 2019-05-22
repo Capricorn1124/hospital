@@ -1,6 +1,7 @@
 //app.js
 App({
-  a:1,
+  doc:1,
+  pat:0,
   onLaunch: function () {
     
     
