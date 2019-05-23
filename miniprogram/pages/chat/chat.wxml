@@ -3,12 +3,20 @@
    <view class="chat-notice" wx:if="{{userInfo}}">系统消息: 欢迎 {{ userInfo.nickName }}前来咨询</view>
    <!-- <view class="historycon"> -->
    <!-- <scroll-view scroll-y="true" class="history" scroll-top="{{scrollTop}}"> -->
-    <view class="cu-chat">
-  <view class="cu-item self" wx:for="{{msg}}" wx:key="{{index}}">
+    <view class="cu-chat" wx:for="{{msg}}" wx:key="{{index}}">
+  <view class="cu-item self"  style="display:block">
     <view class="main">
       <view class="content bg-green shadow">
-        <text><image src="{{item.name}}"></image>{{item.name}}</text>
+        <text>{{item.name}}</text>
       </view>
+    </view>
+    <view class="cu-avatar radius"><open-data type="userAvatarUrl"></open-data></view>
+    <view class="date">{{item.time}}</view>
+    
+  </view>
+   <view class="cu-item self" style="display:block">
+    <view class="main">
+      <image src="{{item}}" wx:for="{{images}}" wx:key="{{index}}"  class="radius" mode="widthFix"></image>
     </view>
     <view class="cu-avatar radius"><open-data type="userAvatarUrl"></open-data></view>
     <view class="date">{{item.time}}</view>

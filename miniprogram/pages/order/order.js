@@ -66,25 +66,22 @@ Page({
       // }).then(res=>{
       //   console.log(res)
       // })
-      // console.log(e.detail.value.hos)
-      // db.collection("hospital").where({
-      //   title: e.detail.value.hos
-      // }).get().then(res => {
-      //   console.log(res.data[0].right_mun);
-      //   this.setData({
-      //     num: Number(res.data[0].right_mun),
-      //     id: res.data[0]._id
-      //   })
-      //   this.data.num = this.data.num + 1;
-      //   console.log(this.data.id)
-      //   db.collection("hospital").doc(this.data.id).update({
-      //     data: {
-      //       right_mun: this.data.num.toString()
-      //     }
-      //   }).then(res => {
-      //     console.log(res)
-      //   })
-      // });
+      db.collection("hospital").where({
+        title: e.detail.value.hos
+      }).get().then(res => {
+        this.setData({
+          num: Number(res.data[0].right_mun),
+          id: res.data[0]._id
+        })
+        this.data.num = this.data.num + 1;
+        db.collection("hospital").doc(this.data.id).update({
+          data: {
+            right_mun: this.data.num.toString()
+          }
+        }).then(res => {
+          console.log(res)
+        })
+      });
       });
     
    
