@@ -5,7 +5,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: '欢迎使用安心医疗',
+    motto: '欢迎使用安心医疗,点击进入',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),

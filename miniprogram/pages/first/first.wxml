@@ -7,9 +7,7 @@
       <text class="userinfo-nickname">Hello，{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto" bindtap='onTap'>
+  <view class="usermotto" bindtap='onTap'> 
     <text class="user-motto">{{motto}}\n</text>
-    
-    <text>请点击进入</text>
   </view>
 </view>

@@ -8,6 +8,8 @@ Page({
     content:'',
     images:[],
     fileIds:[],
+    state:"display: none",
+    time:''
     // msg:["您好，请问医生在嘛"],
     // time:''
   },
@@ -34,8 +36,14 @@ Page({
         this.setData({
           images: this.data.images.concat(tempFilePaths)
         });
+        var DATE = util.formatTime(new Date());
+        this.setData({
+          state: "",
+          time:DATE
+        })
       }
     })
+   
     // wx.chooseImage({
     //   count: 1,
     //   sizeType: ['original', 'compressed'],

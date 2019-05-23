@@ -1,6 +1,16 @@
+<view>
+<import src="/pages/public.wxml"/>
+<view class='profile'>
 
+<view class="profile-img">
+  <open-data type="userAvatarUrl" ></open-data>
+</view>
+  <open-data type="userNickName" class="profile-name"></open-data>
+</view>
 <i-cell-group>
-    <i-cell title="我的评论" is-link url=""></i-cell>
+    <!-- <i-cell title="我的评论" is-link url=""></i-cell> -->
     <i-cell title="我的预约" is-link url="/pages/mine_appointment/mine_appointment"></i-cell>
      <i-cell title="我收到的预约" is-link url="/pages/receive_appointment/receive_appointment"    style="display:{{state}}" ></i-cell>
 </i-cell-group>
+<template is="foot" />
+</view>

@@ -3,6 +3,10 @@ page {
   background-color: #f7f7f7; 
   height: 100%; 
 }
+.chat_img{
+  width:300rpx;
+  height:200rpx;
+}
 /* 聊天内容 */  
 .news {  
   padding-top: 30rpx;  
