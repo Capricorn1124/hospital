@@ -45,11 +45,15 @@ handleChangeScroll:function(e){
 picture:function () {  
   
 },
+  changeState:function(e){
+    console.log(e)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-this.getContent();
+   this.getContent();
+  
   },
 
   /**

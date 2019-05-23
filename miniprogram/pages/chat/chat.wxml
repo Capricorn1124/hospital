@@ -7,7 +7,7 @@
   <view class="cu-item self" wx:for="{{msg}}" wx:key="{{index}}">
     <view class="main">
       <view class="content bg-green shadow">
-        <text>{{item.name}}</text>
+        <text><image src="{{item.name}}"></image>{{item.name}}</text>
       </view>
     </view>
     <view class="cu-avatar radius"><open-data type="userAvatarUrl"></open-data></view>

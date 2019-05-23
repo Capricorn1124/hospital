@@ -5,14 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    patList:[]
   },
-
+ getorder:function(){
+   wx.cloud.callFunction({
+     name:"getorder"
+   }).then(res=>{
+     for (var i = 0; i < res.result.data.length;i++){
+       if (res.result.data[i].doc==="巴雪宇"){
+         this.setData({
+           patList: this.data.patList.concat(res.result.data[i])
+         })
+       }
+     }
+   })
+ },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getorder()
   },
 
   /**

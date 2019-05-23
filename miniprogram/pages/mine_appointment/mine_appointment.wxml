@@ -11,7 +11,7 @@
           <view class="name">{{item.hos}}</view>
         </view>
         <view class="due-date-text cell-part">{{item.dep}}</view>
-        <!-- <view class="due-date-text cell-part">{{item.name}}</view> -->
+        <view class="due-date-text cell-part">{{item.doc}}</view>
         <!-- <view class="due-date-text cell-part">￥56</view> -->
       </view>
       <view class="cell-number cell-full">

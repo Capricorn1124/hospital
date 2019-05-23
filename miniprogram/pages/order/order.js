@@ -17,20 +17,22 @@ Page({
     h_index:0,
     image:'http://img2.imgtn.bdimg.com/it/u=1903402715,1102906635&fm=26&gp=0.jpg',
     doctemp:[],
+    num:0,
+    id:''
     
   },
-  toast:function(){
-    wx.showToast({
-      title: '预约成功',
-      icon: 'success',
-      duration: 2000
-    })
-    setTimeout(function(){
-      wx.navigateTo({
-        url: '/pages/order/order',
-      })
-    },2500)
-  },
+  // toast:function(){
+  //   wx.showToast({
+  //     title: '预约成功',
+  //     icon: 'success',
+  //     duration: 2000
+  //   })
+  //   setTimeout(function(){
+  //     wx.navigateTo({
+  //       url: '/pages/order/order',
+  //     })
+  //   },2500)
+  // },
   formSubmit: function (e) {
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
     db.collection('order').add({
@@ -46,9 +48,47 @@ Page({
       
       }
     }).then(res => {
-        console.log("添加成功")
+      console.log("预约成功")
+      // db.collection("hospital").where({
+      //   title: e.detail.value.hos
+      // }).get().then(res => {
+      //   console.log(res.data[0].right_mun);
+      //   this.setData({
+      //     num: Number(res.data[0].right_mun),
+      //     id: res.data[0]._id
+      //   })});
+      // wx.cloud.callFunction({
+      //   name:'updatenum',
+      //   data:{
+      //     id:this.data.id,
+      //     num:this.data.num
+      //   }
+      // }).then(res=>{
+      //   console.log(res)
+      // })
+      // console.log(e.detail.value.hos)
+      // db.collection("hospital").where({
+      //   title: e.detail.value.hos
+      // }).get().then(res => {
+      //   console.log(res.data[0].right_mun);
+      //   this.setData({
+      //     num: Number(res.data[0].right_mun),
+      //     id: res.data[0]._id
+      //   })
+      //   this.data.num = this.data.num + 1;
+      //   console.log(this.data.id)
+      //   db.collection("hospital").doc(this.data.id).update({
+      //     data: {
+      //       right_mun: this.data.num.toString()
+      //     }
+      //   }).then(res => {
+      //     console.log(res)
+      //   })
+      // });
       });
-  
+    
+   
+
   },
  getdep:function(){
 wx.cloud.callFunction({

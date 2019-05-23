@@ -44,3 +44,7 @@
   float: left;
   margin: 0 15rpx;
 }
+.doc{
+  display:none;
+  color:red;
+}

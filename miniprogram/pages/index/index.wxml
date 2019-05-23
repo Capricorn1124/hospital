@@ -48,7 +48,7 @@
 <view class='another'>别名：{{item.another_name}}</view>
 <view class='address'>地址：{{item.address1}}</view>
 <view class='tel'>电话：{{item.tel}}</view>
-<view class='pre'>{{item.right_mun}}</view>
+<view class='pre'>预约人数{{item.right_mun}}</view>
 </view>
 </view>
 

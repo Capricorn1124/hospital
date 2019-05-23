@@ -30,6 +30,8 @@
 		"hidedInDevtools": []
 	},
 	"scripts": {},
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -47,7 +49,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 14,
+			"current": 16,
 			"list": [
 				{
 					"id": -1,
@@ -152,6 +154,19 @@
 					"name": "recieve",
 					"pathName": "pages/receive_appointment/receive_appointment",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "chat",
+					"pathName": "pages/chat/chat",
 					"scene": null
 				}
 			]
