@@ -21,18 +21,18 @@ Page({
     id:''
     
   },
-  // toast:function(){
-  //   wx.showToast({
-  //     title: '预约成功',
-  //     icon: 'success',
-  //     duration: 2000
-  //   })
-  //   setTimeout(function(){
-  //     wx.navigateTo({
-  //       url: '/pages/order/order',
-  //     })
-  //   },2500)
-  // },
+  toast:function(){
+    wx.showToast({
+      title: '预约成功',
+      icon: 'success',
+      duration: 2000
+    })
+    setTimeout(function(){
+      wx.navigateTo({
+        url: '/pages/order/order',
+      })
+    },2500)
+  },
   formSubmit: function (e) {
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
     db.collection('order').add({
@@ -53,7 +53,7 @@ Page({
       //   title: e.detail.value.hos
       // }).get().then(res => {
       //   console.log(res.data[0].right_mun);
-      //   this.setData({
+      //   th is.setData({
       //     num: Number(res.data[0].right_mun),
       //     id: res.data[0]._id
       //   })});
